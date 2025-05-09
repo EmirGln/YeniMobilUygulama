@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F9"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvPaymentTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💳 Ödeme Bilgileri"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+
+        <EditText
+            android:id="@+id/etCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kart Numarası (16 hane)"
+            android:inputType="number"
+            android:maxLength="16"
+            android:padding="16dp"
+            android:background="@drawable/rounded_input"
+            android:layout_marginBottom="16dp"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/etCardHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kart Sahibinin Adı"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:background="@drawable/rounded_input"
+            android:layout_marginBottom="16dp"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/etExpiryDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="MM/YY"
+                android:inputType="text"
+                android:padding="16dp"
+                android:background="@drawable/rounded_input"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:maxLength="5"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/etCVV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="CVV"
+                android:inputType="numberPassword"
+                android:padding="16dp"
+                android:background="@drawable/rounded_input"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:maxLength="3" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ödemeyi Tamamla"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:elevation="4dp" />
+    </LinearLayout>
+</ScrollView>
